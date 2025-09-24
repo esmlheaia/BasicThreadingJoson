@@ -1,6 +1,6 @@
 ﻿namespace BasicThreadingJoson
 {
-    partial class Form1
+    partial class FrmBasicThread
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBasicThread));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -56,7 +56,7 @@
             this.button1.Text = "Run";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // FrmBasicThread
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -66,8 +66,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Lavender;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmBasicThread";
+            this.Text = "BasicThread";
             this.ResumeLayout(false);
             this.PerformLayout();
 
