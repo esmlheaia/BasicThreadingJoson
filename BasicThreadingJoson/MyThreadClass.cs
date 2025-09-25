@@ -11,7 +11,7 @@ namespace BasicThreadingJoson
     {
         public static void Thread1()
         {
-            for (int LoopCount = 0; LoopCount <=5; LoopCount++)
+            for (int LoopCount = 0; LoopCount <=50; LoopCount++)
             {
                 Thread thread = Thread.CurrentThread;
                 Console.WriteLine("Name of Thread: " + thread.Name + " = " + LoopCount);

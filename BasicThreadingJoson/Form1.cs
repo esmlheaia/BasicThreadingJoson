@@ -19,18 +19,18 @@ namespace BasicThreadingJoson
             InitializeComponent();
         }
 
-        private void FrmBasicThread_Load(object sender, EventArgs e)
+        private void btnRun_Click(object sender, EventArgs e)
         {
-            lblThread.Text = "Start Thread";
+            lblThread.Text = "-Start Thread-";
             Console.WriteLine("-Thread 1 Start-");
             ThreadStart thread1 = new ThreadStart(MyThreadClass.Thread1);
-            
+
             threadA = new Thread(new ThreadStart(thread1));
             threadA.Name = "Thread A process";
-            
+
             threadB = new Thread(new ThreadStart(thread1));
             threadB.Name = "Thread B process";
-            
+
             threadA.Start();
             threadB.Start();
 
