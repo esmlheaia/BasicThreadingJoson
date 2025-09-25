@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblThread = new System.Windows.Forms.Label();
             this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblThread
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(90, 163);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(385, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "-Before Starting Thread-";
+            this.lblThread.AutoSize = true;
+            this.lblThread.BackColor = System.Drawing.Color.Transparent;
+            this.lblThread.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThread.ForeColor = System.Drawing.Color.Black;
+            this.lblThread.Location = new System.Drawing.Point(90, 163);
+            this.lblThread.Name = "lblThread";
+            this.lblThread.Size = new System.Drawing.Size(385, 37);
+            this.lblThread.TabIndex = 0;
+            this.lblThread.Text = "-Before Starting Thread-";
             // 
             // btnRun
             // 
@@ -66,10 +66,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(561, 386);
             this.Controls.Add(this.btnRun);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblThread);
             this.ForeColor = System.Drawing.Color.Lavender;
             this.Name = "FrmBasicThread";
             this.Text = "BasicThread";
+            this.Load += new System.EventHandler(this.FrmBasicThread_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,7 +78,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblThread;
         private System.Windows.Forms.Button btnRun;
     }
 }
